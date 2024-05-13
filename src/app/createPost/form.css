@@ -1,0 +1,7 @@
+.display_data_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+}

@@ -1,7 +1,9 @@
 
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import "bootstrap/dist/css/bootstrap.min.css"; 
 import "./globals.css";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="my-6">
-        <Link class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-0 px-4 rounded" href={'/createPost'}>Create Post</Link>
+        <div className="my-6 ">
+          <div className="d-flex justify-content-center align-items-center">
+        <Link class="btn btn-primary text-decorartor-none" href={'/createPost'}>Create Post</Link>
+        </div>
         </div>
             {children}
       </body>
