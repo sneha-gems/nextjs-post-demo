@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className="my-6 ">
           <div className="d-flex justify-content-center align-items-center">
-        <Link class="btn btn-primary text-decorartor-none" href={'/createPost'}>Create Post</Link>
+        <Link className="btn btn-primary text-decorartor-none" href={'/createPost'}>Create Post</Link>
         </div>
         </div>
             {children}
